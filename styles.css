@@ -1,0 +1,286 @@
+
+:root {
+    --black-900: #000;
+    --grey-200: #8f8f8f;
+
+    --pink-900: #ff4c68;
+    --pink-300: #ef8172;
+
+    --white-100: #fff;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--pink-900);
+    font-size: 1.2rem;
+    padding: 1.5em 2.5em;
+}
+
+.logo {
+    left: 0.7rem;
+    padding-bottom: 0.20em;
+    width: 0.85em;
+}
+
+.navbar-brand {
+    font-family: 'Rowdies', cursive;
+    font-size: 2.7rem;
+    text-shadow: 0.5px 0.5px 2px black;
+}
+
+.nav-item {
+    padding: 0 0.5em;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 0;
+    }
+
+    .navbar-brand {
+        font-size: 1.7rem;
+    }
+}
+
+/* Header */
+.header {
+    align-items: center;
+    background-color: var(--pink-900);
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.header-container {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+}
+
+.left-col {
+    font-size: 3.5rem;
+    line-height: 2;
+    padding-left: 6rem;
+    text-align: center;
+}
+
+.googlePlay {
+    filter: invert(83%) sepia(100%) saturate(0%) hue-rotate(20deg) brightness(105%) contrast(103%);
+    width: 1.5rem;
+}
+
+.apple {
+    width: 1.5rem;
+}
+
+.btn-download {
+    width: 40%;
+    margin: 1rem 0.6rem 0 0;
+}
+
+.iphone-img {
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 60px;
+    transform: rotate(25deg);
+    width: 45%;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+
+    .left-col {
+        margin: 0;
+        padding: 2rem;
+    }
+
+    .header-download {
+        align-items: center;
+        display: inline-block;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    .iphone-img {
+        margin: 1rem auto;
+        padding: 0;
+        top: 50%;
+        transform: rotate(0deg);
+        width: 60%;
+    }
+}
+
+/* White Section */
+.white-section {
+    align-items: center;
+    background-color: var(--white-100);
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    padding: 10%;
+    text-align: center;
+    width: 100%;
+}
+
+.white-section svg {
+    filter: invert(78%) sepia(19%) saturate(7496%) hue-rotate(313deg) brightness(100%) contrast(88%);
+    margin: 7%;
+    width: 20%;
+}
+
+/* Comments */
+.comments {
+    background-color: var(--pink-300);
+    line-height: 2;
+    padding: 5rem 7rem;
+    text-align: center;
+}
+
+.carousel-img {
+    border-radius: 50%;
+    margin: 2rem;
+    width: 10rem;
+}
+
+.carousel-indicators {
+    bottom: -1.5rem;
+}
+
+.comments-img {
+    margin-top: 5rem;
+    padding: 0.5rem;
+    width: 20%;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .comments {
+        padding: 5rem 1.85rem 3rem;
+    }
+
+    .comments-img {
+        margin: 2rem 0;
+        padding: 1rem;
+        width: 15rem;
+    }
+}
+
+/* Pricing */
+.pricing {
+    align-items: center;
+    justify-content: center;
+    line-height: 3;
+    padding: 7rem 5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.pricing-card  {
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0 1rem;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+}
+
+.col-lg-4 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+@media (max-width: 768px){
+    .pricing {
+        margin: 0;
+        padding: 3rem;
+    }
+}
+
+/* Download */
+.download {
+    align-items: center;
+    background-color: var(--pink-900);
+    color: var(--white-100);
+    flex-direction: column;
+    justify-content: center;
+    padding: 10rem 9rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px){
+    .download {
+        padding: 10rem 3rem;
+    }
+}
+
+.download-text {
+    margin-bottom: 2rem;
+}
+
+.download .btn {
+    margin: 0.5rem;
+}
+
+/* contact */
+.contact {
+    align-items: center;
+    background-color: var(--white-100);
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+}
+.contact p {
+    margin-top: 1rem;
+}
+.contact svg {
+    padding: 1rem;
+    width: 3rem;
+}
+
+@media only screen and (min-width:1600px){
+    .navbar {
+        padding: 2em 12em;
+    }
+}
